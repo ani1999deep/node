@@ -3,15 +3,15 @@ const path=require('path');
 const dirPath=path.join(__dirname,'crud');
 const filePath=`${dirPath}/apple.txt`
 
-// Read this file
-// fs.writeFileSync(filePath,'This is async file');
-
-
-
-
-
-
 //Write this file
+fs.writeFileSync(filePath,'This is async file');
+
+
+
+
+
+
+// Read this file
 // fs.readFile(filePath,"utf8",(err,item)=>{
     
 //     console.log(item)
