@@ -4,10 +4,7 @@ const dirPath=path.join(__dirname,'crud');
 const filePath=`${dirPath}/apple.txt`
 
 //Write this file
-fs.writeFileSync(filePath,'This is async file');
-
-
-
+// fs.writeFileSync(filePath,'This is async file');
 
 
 
@@ -16,8 +13,6 @@ fs.writeFileSync(filePath,'This is async file');
     
 //     console.log(item)
 // });
-
-
 
 
 
