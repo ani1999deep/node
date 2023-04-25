@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 
-app.get('', (req, res) => {
+app.get('/', (req, res) => {
 
     res.send('Hello! I am anideep')
 
@@ -19,4 +19,4 @@ app.get('/help', (req, res) => {
 
 })
 
-app.listen(6000);
+app.listen(4000);
