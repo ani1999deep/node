@@ -18,14 +18,10 @@ app.get("/about", (req, res) => {
     res.send(`<input type="text" placeholder="Enter name" ${req.query.name}/>
     <button>Click Here</button>
     <a href="/">Go the Home
-    
-    
-    
     page</a>`)
     console.log("Data send by browser")
 
 })
-
 
 app.get("/help", (req, res) => {
 
