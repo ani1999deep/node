@@ -34,6 +34,12 @@ app.get('/profile', (_, resp) => {
 });
 })
 
+
+app.get('/login',(_,resp)=>{
+
+    resp.render('login')
+})
+
 app.get('*', (_, resp) => {
 
     resp.sendFile(`${publicPath}/nopage.html`)
