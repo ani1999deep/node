@@ -24,7 +24,8 @@ app.get('/profile', (_, resp) => {
     const user={
         name:'Ani',
         email:'ani@gmail.com',
-        city:'kolkata'
+        city:'kolkata',
+        skills:['php','js','c++']
     }
 
  // Rendering home.ejs page
