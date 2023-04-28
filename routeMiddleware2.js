@@ -1,7 +1,7 @@
 const express = require('express');
-const reqFilter=require('./middleware');
+const reqFilter = require('./middleware');
 const app = express();
-const route=express.Router();
+const route = express.Router();
 // app.use(reqFilter)
 route.use(reqFilter);
 app.get('/', (req, resp) => {
@@ -9,7 +9,7 @@ app.get('/', (req, resp) => {
 })
 
 //Route apply only this page
-app.get('/users', reqFilter,(req, resp) => {
+app.get('/users', reqFilter, (req, resp) => {
     resp.send('Welcome to Users page')
 })
 
@@ -22,5 +22,5 @@ route.get('/contact', (req, resp) => {
 })
 
 
-app.use('/',route)
+app.use('/', route)
 app.listen(5000)
