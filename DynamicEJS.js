@@ -18,6 +18,8 @@ app.get('/about', (_, resp) => {
 app.get('/home', (_, resp) => {
 
     resp.sendFile(`${publicPath}/home.html`)
+
+    
 })
 
 app.get('/profile', (_, resp) => {
