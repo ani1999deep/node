@@ -1,27 +1,27 @@
-const mySql=require("mysql");
+const mySql = require("mysql");
 
-const connection=mySql.createConnection({
+const connection = mySql.createConnection({
 
-    host:"localhost",
-    user:'root',
-    password:"",
-    database:"test"
+    host: "localhost",
+    user: 'root',
+    password: "",
+    database: "test"
 });
 
-connection.connect((err)=>{
+connection.connect((err) => {
 
-    if(err){
+    if (err) {
 
         console.log("Error")
     }
-    else{
+    else {
 
         console.log("Connected")
     }
 });
 
 //Write query here
-connection.query("select * from users",(err,result)=>{
+connection.query("select * from users", (err, result) => {
 
-    console.log("result",result)
+    console.log("result", result)
 })
